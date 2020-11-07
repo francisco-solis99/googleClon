@@ -10,99 +10,103 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header class="google__header">
-        <nav class="google__nav">
-            <ul class="google__list">
-                <a href="" class="google__link">
-                    <li class="google__item">Gmail</li>
-                </a>
-                <a href="" class="google__link">
-                    <li class="google__item">Imagenes</li>
-                </a>
-                <a href="" class="google__link">
-                    <li class="google__item">
-                        <img src="" alt="Google Apps" title="Google Apps">
-                    </li>
-                </a>
-                <a href="" class="google__link">
-                    <li class="google__item">
-                        <img src="https://lh3.googleusercontent.com/-2dUmFRpzf00/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucn_klcuwtHayQKC3jtQC_MiekJO1g/photo.jpg?sz=46" alt="Google User Account" title="Google Account" class="google__account-image">
-                    </li>
-                </a>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="hero">
-        <section class="google__hero">
-            <picture class="google__image-container">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="google__image">
-            </picture>
-
-            <form action="" class="google__form">
-                <label for="search" class="google__label">
-                    <div class="google__icon-search">
-                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="gicon__search">
-                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                        </svg>
+    <div class="wrapper">
+        <header class="google__header">
+            <nav class="google__nav">
+                <ul class="google__list">
+                    <a href="" class="google__link">
+                        <li class="google__item">Gmail</li>
+                    </a>
+                    <a href="" class="google__link">
+                        <li class="google__item">Imagenes</li>
+                    </a>
+                    <a href="" class="google__link">
+                        <li class="google__item">
+                            <img src="" alt="Google Apps" title="Google Apps">
+                        </li>
+                    </a>
+                    <a href="" class="google__link">
+                        <li class="google__item">
+                            <img src="https://lh3.googleusercontent.com/-2dUmFRpzf00/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucn_klcuwtHayQKC3jtQC_MiekJO1g/photo.jpg?sz=46" alt="Google User Account" title="Google Account" class="google__account-image">
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+    
+        <main class="hero">
+            <section class="google__hero">
+                <picture class="google__image-container">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="google__image">
+                </picture>
+    
+                <form action="" class="google__form">
+                    <label for="search" class="google__label">
+                        <div class="google__icon-search">
+                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="gicon__search">
+                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                            </svg>
+                        </div>
+                        <div class="google__bar">
+                            <input type="text" id="search" name="search" class="google__input-text"/>
+                        </div>
+    
+                        <div class="google__icon-voice">
+                            <svg class="HPVvwb" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path>
+                                <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
+                                <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path>
+                                <path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path>
+                            </svg>
+                        </div>
+                    </label>
+    
+                    <!-- TODO: Maybe use buttons elements -->
+                    <div class="google__buttons">
+                        <input type="submit" value="Buscar con google" class="google__button"/>
+                        <input type="submit" value="Me siento con suerte" class="google__button"/>
                     </div>
-                    <div class="google__bar">
-                        <input type="text" id="search" name="search" class="google__input-text"/>
-                    </div>
+    
+                </form>
+            </section>
+        </main>
+    
+        <footer class="google__footer">
+            <div class="google__country-container">
+                <span class="google__country">Mexico</span>
+            </div>
 
-                    <div class="google__icon-voice">
-                        <svg class="HPVvwb" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path>
-                            <path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path>
-                            <path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path>
-                            <path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path>
-                        </svg>
-                    </div>
-                </label>
+            <div class="gfooter__list">
+                <ul class="footer__list footer__list-left">
+                    <a href="" class="footer__link">
+                        <li class="footer__item">Publicidad</li>
+                    </a>
+                    <a href="" class="footer__link">
+                        <li class="footer__item">Negocios</li>
+                    </a>
+                    <a href="" class="footer__link">
+                        <li class="footer__item">Sobre Google</li>
+                    </a>
+                    <a href="" class="footer__link">
+                        <li class="footer__item">Cómo funciona la busqueda</li>
+                    </a>
+                </ul>
 
-                <!-- TODO: Maybe use buttons elements -->
-                <div class="google__buttons">
-                    <input type="submit" value="Buscar con google" class="google__button"/>
-                    <input type="submit" value="Me siento con suerte" class="google__button"/>
-                </div>
-
-            </form>
-        </section>
-    </main>
-
-    <footer class="google__footer">
-        <h3 class="google__country">Mexico</h3>
-        <div class="gfooter__list">
-            <ul class="footer__list footer__list-left">
-                <a href="" class="footer__link">
-                    <li class="footer__item">Publicidad</li>
-                </a>
-                <a href="" class="footer__link">
-                    <li class="footer__item">Negocios</li>
-                </a>
-                <a href="" class="footer__link">
-                    <li class="footer__item">Sobre Google</li>
-                </a>
-                <a href="" class="footer__link">
-                    <li class="footer__item">Cómo funciona la busqueda</li>
-                </a>
-            </ul>
-        </div>
-
-        <div class="gfooter__list">
-            <ul class="footer__list footer__list-right">
-                <a href="" class="footer__link">
-                    <li class="footer__item">Privacidad</li>
-                </a>
-                <a href="" class="footer__link">
-                    <li class="footer__item">Condiciones</li>
-                </a>
-                <a href="" class="footer__link">
-                    <li class="footer__item">Preferencias</li>
-                </a>
-            </ul>
-        </div>
-    </footer>
+                <ul class="footer__list footer__list-right">
+                    <a href="" class="footer__link">
+                        <li class="footer__item">Privacidad</li>
+                    </a>
+                    <a href="" class="footer__link">
+                        <li class="footer__item">Condiciones</li>
+                    </a>
+                    <a href="" class="footer__link">
+                        <li class="footer__item">Preferencias</li>
+                    </a>
+                </ul>
+            </div>
+            
+        </footer>
+    </div>
 
 </body>
 </html>
