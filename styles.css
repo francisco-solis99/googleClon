@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.wrapper{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* Styles to header */
+
+.google__header{
+    width: 100%;
+    /* background-color: salmon; */
+    /* padding-bottom: 2.5em; */
+    padding-top: 10px;
+}
+
+.google__list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 30px;
+    /* background-color: cadetblue; */
+}
+
+.google__link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    padding-left: 15px;
+}
+
+.google__account-image{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+/* Styles to hero section */
+.hero{
+    margin-top: 12px;
+    /* background-color: lawngreen; */
+}
+
+.google__hero{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    /* background-color: salmon; */
+}
+
+.google__form{
+    /* background-color: lightgreen; */
+    margin-top: 15px;
+    width: 70%;
+    max-width: 584px;
+    padding-top: 6px;
+    position: relative;
+}
+
+.google__image-container{
+    padding-top: 109px;
+}
+
+.google__icon-search svg{
+    fill: #9aa0a6;
+}
+
+.google__bar{
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    width: auto;
+    padding: 5px 8px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.google__input-text{
+    height: 100%;
+    border: none;
+    /* border-radius: 24px; */
+    font-size: 1.6rem;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    display: flex;
+    flex: 100%;
+    outline: none;
+    /* background-color: cadetblue; */
+}
+
+.google__icon-search, .google__icon-voice{
+    display: inline-block;
+    position: absolute;
+}
+
+.google__icon-search{
+    width: 20px;
+    height: 20px;
+    left: 2.5%;
+    top: 15%;
+}
+
+.google__icon-voice{
+    width: 24px;
+    height: 24px;
+    right: 2.5%;
+    top: 12%;
+}
+
+.google__buttons{
+    /* background-color: chocolate; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google__button{
+    background-color: #f2f2f2;
+    color: #5f6368;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-align: center;
+    /* min-height: 54px; */
+    height: 36px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    border-radius: 7px;
+    outline-color: #4D90FE;
+}
+
+.google__button:hover{
+    border: 1px solid #c6c6c6;
+    color: #222;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Footer styles */
+
+.google__footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    height: auto;
+    color: rgba(0,0,0,.54);
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.google__country-container{
+    border-bottom: 1px solid #e4e4e4;
+    line-height: 40px;
+    padding: 0 27px;
+    display: flex;
+    align-items: center;
+}
+
+.google__country{
+    font-size: 1.5rem;
+}
+
+.gfooter__list{
+    padding: 0 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    flex-wrap: wrap;
+}
+
+.footer__list{
+    list-style: none;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-right: 27px;
+}
+
+.footer__link:last-child{
+    padding-right: 0;
+}
+
+.footer__link:hover{
+    text-decoration: underline;
+}
+
+/* .footer__list-left > .footer__link{
+    margin-right: 27px;
+}
+
+.footer__list-right > .footer__link{
+    margin-left: 27px;
+} */
+
+@media screen and (max-width: 800px){
+    .gfooter__list{
+       justify-content: center;
+    }
+
+    .footer__list-right{
+        order: -1;
+    } 
+
+    .footer__link-left{
+        order: 2;
+    }
+}
