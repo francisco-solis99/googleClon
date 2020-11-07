@@ -3,22 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="A basic Clon of Google search engine">
+    <meta name="robots" content="index,folow">
+    <meta name="author" content="Francisco Solis"> 
     <title>Google</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <a href=""><li>Gmail</li></a>
-                <a href=""><li>Imagenes</li></a>
-                <a href=""><li>
-                    <img src="" alt="Google Apps">
-                </li></a>
-                <a href=""><li>
-                    <img src="" alt="Google user account">
-                </li></a>
+    <header class="google__header">
+        <nav class="google__nav">
+            <ul class="google__list">
+                <a href="" class="google__link">
+                    <li class="google__item">Gmail</li>
+                </a>
+                <a href="" class="google__link">
+                    <li class="google__item">Imagenes</li>
+                </a>
+                <a href="" class="google__link">
+                    <li class="google__item">
+                        <img src="" alt="Google Apps" title="Google Apps">
+                    </li>
+                </a>
+                <a href="">
+                    <li class="google__item">
+                        <img src="" alt="Google User Account" title="Google Account">
+                    </li>
+                </a>
             </ul>
         </nav>
     </header>
+
+    <main class="hero">
+        <section>
+            <picture class="google__image-container">
+                <img src="" alt="Google" class="google__image">
+            </picture>
+
+            <form action="" class="google__form">
+                <label for="search" class="google__label">
+                    <img src="" alt="serch icon" class="google__icon google__icon-search"/>
+                    <input type="text" id="search" name="search"/>
+                    <img src="" alt="voice icon" class="google__icon google__icon-voice">
+                </label>
+
+                <!-- TODO: Maybe use buttons elements -->
+                <input type="submit" value="Buscar con google" class="google__button"/>
+                <input type="submit" value="Me siento con suerte" class="google__button"/>
+
+            </form>
+        </section>
+    </main>
 </body>
 </html>
