@@ -11,3 +11,34 @@ html{
 body{
     font-family: Arial, sans-serif;
 }
+
+/* Styles to header */
+
+.google__header{
+    width: 100%;
+    /* background-color: salmon; */
+    /* padding-bottom: 2.5em; */
+    padding-top: 10px;
+}
+
+.google__list{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 30px;
+    /* background-color: cadetblue; */
+}
+
+.google__link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    padding-left: 15px;
+}
+
+.google__account-image{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
